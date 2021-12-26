@@ -2,7 +2,7 @@
 Get the key and reach the stairs before your enemies catch you!
 <br/><br/>
 
-[Live Demo](https://carla-ng.github.io/to-do-list/)
+[Live Demo](https://carla-ng.github.io/dungeon-mini-game-js/)
 <br/><br/>
 
 *There's still a lot of improvements to do.*
