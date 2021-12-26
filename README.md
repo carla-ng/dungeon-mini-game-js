@@ -1,6 +1,9 @@
 ## A mini dungeon JavaScript game
 Get the key and reach the stairs before your enemies catch you!
-<br/>
+<br/><br/>
+
+[Live Demo](https://carla-ng.github.io/to-do-list/)
+<br/><br/>
 
 *There's still a lot of improvements to do.*
 <br/><br/>
