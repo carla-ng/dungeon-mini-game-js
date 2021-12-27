@@ -1,0 +1,56 @@
+#canvas {
+  border: 2px solid #000;
+}
+
+#instructions {
+  margin-top: 20px;
+}
+
+#instructions h2 {
+  text-decoration: underline;
+}
+
+#instructions p {
+  font-size: 18px;
+}
+
+#keys {
+  margin-top: 10px;
+  width: 192px;
+}
+
+#keys > div {
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -moz-flex-pack: center;
+  -moz-justify-content: center;
+  justify-content: center;
+}
+
+#keys .key-image {
+  cursor: pointer;
+  height: 64px;
+  width: 64px;
+}
+
+#keys .key-image#key-up {
+  text-align: center;
+  background: url(../img/buttons.png) -320px -64px;
+}
+
+#keys .key-image#key-left {
+  background: url(../img/buttons.png) -320px -128px;
+}
+
+#keys .key-image#key-down {
+  background: url(../img/buttons.png) -64px -128px;
+}
+
+#keys .key-image#key-right {
+  background: url(../img/buttons.png) -64px -192px;
+}
+/*# sourceMappingURL=dungeon.css.map */

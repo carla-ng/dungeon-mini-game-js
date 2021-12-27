@@ -4,7 +4,6 @@
  * TO DO
  * 
  * - show messages when hero does something
- * - alert for mobile / desktop
  * - improve code
  * 
  */
@@ -243,6 +242,27 @@ function draw_board() {
 }
 
 
+// A key is pressed to move hero
+function key_pressed(hero, key) {
+  // Up
+  if (key.keyCode == 38 || key == "key-up") {
+    hero.up();
+  }
+  // Down
+  else if (key.keyCode == 40 || key == "key-down") {
+    hero.down();
+  }
+  // Left
+  else if (key.keyCode == 37 || key == "key-left") {
+    hero.left();
+  }
+  // Right
+  else if (key.keyCode == 39 || key == "key-right") {
+    hero.right();
+  }
+}
+
+
 // Game is initialized
 function initialize() {
   canvas = document.getElementById("canvas");
@@ -264,22 +284,14 @@ function initialize() {
   enemies.push(new enemy(7,7));
 
   // Keyboard listener
-  document.addEventListener("keydown", function(tecla) {
-    // Up
-    if (tecla.keyCode == 38) {
-      hero.up();
-    }
-    // Down
-    else if (tecla.keyCode == 40) {
-      hero.down();
-    }
-    // Left
-    else if (tecla.keyCode == 37) {
-      hero.left();
-    }
-    // Right
-    else if (tecla.keyCode == 39) {
-      hero.right();
+  document.addEventListener("keydown", function(key) {
+    key_pressed(hero, key);
+  });
+
+  document.getElementById("keys").addEventListener("click", function(key) {
+    var elem = key.target.id;
+    if (elem.length) {
+      key_pressed(hero, elem);
     }
   });
 

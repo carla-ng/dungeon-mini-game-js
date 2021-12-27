@@ -17,3 +17,7 @@ https://pipoya.itch.io/pipoya-rpg-tileset-32x32
 *Characters:* FREE RPG Character Sprites 32x32 by Pipoya
 <br/>
 https://pipoya.itch.io/pipoya-free-rpg-character-sprites-32x32
+
+*Keys:* Simple Pixel Art Buttons by Gleao
+<br/>
+https://gleao.itch.io/simple-pixel-art-buttons

@@ -1,0 +1,54 @@
+#canvas {
+    border: 2px solid #000;
+}
+
+#instructions {
+    margin-top: 20px;
+
+    h2 {
+      text-decoration: underline;  
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+#keys {
+    margin-top: 10px;
+    width: 192px;
+
+    & > div {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -moz-flex-pack: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        justify-content: center;
+    }
+
+    .key-image {
+        cursor: pointer;
+        height: 64px;
+        width: 64px;
+
+        &#key-up {
+            text-align: center;
+            background: url(../img/buttons.png) -320px -64px;
+        }
+        &#key-left {
+            background: url(../img/buttons.png) -320px -128px;
+        }
+        &#key-down {
+            background: url(../img/buttons.png) -64px -128px;
+        }
+        &#key-right {
+            background: url(../img/buttons.png) -64px -192px;
+        }
+    }
+}
