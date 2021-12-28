@@ -1,14 +1,4 @@
 
-/****
- * 
- * TO DO
- * 
- * - show messages when hero does something
- * - improve code
- * 
- */
-
-
 /***********************
  *      VARIABLES      *
  ***********************/
@@ -47,6 +37,8 @@ var board = [
   [0,2,2,3,0,0,2,0,0,2,2,2,2,2,0],
   [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 ]
+
+var message = document.getElementById('game-message');
 
 // Enemy
 var enemy = function(x,y) {
@@ -170,7 +162,7 @@ var hero = function() {
   }
 
   this.hero_wins = function() {
-    console.log("You've won!!");
+    show_message("You've won!!");
     this.x = 1;
     this.y = 1;
     this.key = false;
@@ -178,7 +170,10 @@ var hero = function() {
   }
 
   this.hero_dies = function() {
-    console.log("You've lost");
+    show_message("You've lost :(  Try again!");
+    setTimeout(function(){
+      message.innerHTML = "Get the key and reach the stairs before your enemies catch you!";
+    },1000);
     this.x = 1;
     this.y = 1;
     this.key = false;
@@ -192,14 +187,14 @@ var hero = function() {
     if (object == 3) {
       this.key = true;
       board[this.y][this.x] = 2;
-      console.log("You got the key!!");
+      show_message("You got the key!!");
     }
     // Open the door (when reaching stairs)
     else if (object == 1) {
       if (this.key) {
         this.hero_wins();
       } else {
-        console.log("You need a key to open the door.");
+        show_message("You need a key to open the door.");
       }
     }
   }
@@ -260,6 +255,12 @@ function key_pressed(hero, key) {
   else if (key.keyCode == 39 || key == "key-right") {
     hero.right();
   }
+}
+
+
+// Shows message to user
+function show_message(text) {
+  message.innerHTML = text + "<br>" + message.innerHTML;
 }
 
 
