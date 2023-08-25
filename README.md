@@ -16,6 +16,7 @@ https://carla-ng.github.io/dungeon-mini-game-js/
 
 ## :mag: Improvements / Features to Add
 * Fix little bugs
+* Mobile version
 
 <br/>
 
