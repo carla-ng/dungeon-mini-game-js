@@ -14,6 +14,12 @@ https://carla-ng.github.io/dungeon-mini-game-js/
 
 <br/>
 
+## :hammer_and_pick: Built With
+* SCSS
+* JavaScript
+
+<br/>
+
 ## :mag: Improvements / Features to Add
 * Fix little bugs
 * Mobile version
