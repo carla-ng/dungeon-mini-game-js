@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/carla-ng/dungeon-mini-game-js/blob/master/img/readme_image_1.jpg?raw=true" alt="Mini Dungeon Game">
+  <img src="https://github.com/carla-ng/dungeon-mini-game-js/blob/master/img/readme_image_1.jpg?raw=true" alt="Mini Dungeon Game preview">
 </p>
 
 <br/>
@@ -10,7 +10,7 @@ Get the key and reach the stairs before your enemies catch you! (Desktop only)
 <br/>
 
 ## :globe_with_meridians: Demo
-https://carla-ng.github.io/dungeon-mini-game-js/
+[https://carla-ng.github.io/dungeon-mini-game-js/](https://carla-ng.github.io/dungeon-mini-game-js/)
 
 <br/>
 
