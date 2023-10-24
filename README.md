@@ -2,29 +2,29 @@
   <img src="https://github.com/carla-ng/dungeon-mini-game-js/blob/master/img/readme_image_1.jpg?raw=true" alt="Mini Dungeon Game preview">
 </p>
 
-<br/>
+<br>
 
 # A Mini Dungeon JavaScript game
 Get the key and reach the stairs before your enemies catch you! (Desktop only)
 
-<br/>
+<br>
 
 ## :globe_with_meridians: Demo
 [https://carla-ng.github.io/dungeon-mini-game-js/](https://carla-ng.github.io/dungeon-mini-game-js/)
 
-<br/>
+<br>
 
 ## :hammer_and_pick: Built With
 * SCSS
 * JavaScript
 
-<br/>
+<br>
 
 ## :mag: Improvements / Features to Add
 * Fix little bugs
 * Mobile version
 
-<br/>
+<br>
 
 ## :clap: Acknowledgments
 * Tileset: [FREE RPG Tileset 32x32 by Pipoya](https://pipoya.itch.io/pipoya-rpg-tileset-32x32)
