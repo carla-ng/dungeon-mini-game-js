@@ -22,7 +22,6 @@ Get the key and reach the stairs before your enemies catch you! (Desktop only)
 
 ## :mag: Improvements / Features to Add
 * Fix little bugs
-* Mobile version
 
 <br>
 
