@@ -11,9 +11,7 @@
     margin-top: 10px;
     width: 192px;
 
-    @media only screen and (min-width: 769px) {
-        display: none;
-    }
+    @media (min-width: 769px) { display: none; }
 
     & > div {
         display: -webkit-box;
@@ -33,19 +31,32 @@
         cursor: pointer;
         height: 64px;
         width: 64px;
+        -webkit-tap-highlight-color: transparent;
 
         &#key-up {
             text-align: center;
-            background: url(../img/buttons.png) -320px -64px;
+            background-image: url(../img/buttons.png);
+            background-position: -320px -64px;
+
+            &:active { background-position: -384px -64px; }
         }
         &#key-left {
-            background: url(../img/buttons.png) -320px -128px;
+            background-image: url(../img/buttons.png);
+            background-position: -320px -128px;
+
+            &:active { background-position: -384px -128px; }
         }
         &#key-down {
-            background: url(../img/buttons.png) -64px -128px;
+            background-image: url(../img/buttons.png);
+            background-position: -64px -128px;
+
+            &:active { background-position: -128px -128px; }
         }
         &#key-right {
-            background: url(../img/buttons.png) -64px -192px;
+            background-image: url(../img/buttons.png);
+            background-position: -64px -192px;
+
+            &:active { background-position: -128px -192px; }
         }
     }
 }

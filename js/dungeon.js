@@ -16,8 +16,16 @@ var canvas;
 var ctx;
 var FPS = 50;
 
-var tile_width = 50;
-var tile_height = 50;
+var tile_width;
+var tile_height;
+
+if ( window.innerWidth <= 750 ) {
+    tile_width = 20;
+    tile_height = 20;
+} else {
+    tile_width = 50;
+    tile_height = 50;
+}
 
 /*
  * 0 - Wall
@@ -302,8 +310,13 @@ function initialize() {
 }
 
 function clear_canvas() {
-  canvas.width = 750;
-  canvas.height = 500;
+  if ( window.innerWidth <= 750 ) {
+    canvas.width = 300;
+    canvas.height = 200;
+  } else {
+    canvas.width = 750;
+    canvas.height = 500;
+  }
 }
 
 function main() {
